@@ -7,6 +7,7 @@ export default {
   argTypes: {
     color: { control: "select" },
     fontColor: { control: "color" },
+    backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof MyLabel>;
 
@@ -38,4 +39,10 @@ export const ColorPicker = Template.bind({});
 ColorPicker.args = {
   size: "h1",
   fontColor: "#3d0eac",
+};
+
+export const BackgroundColorPicker = Template.bind({});
+BackgroundColorPicker.args = {
+  size: "h1",
+  backgroundColor: "#3d0eac",
 };
